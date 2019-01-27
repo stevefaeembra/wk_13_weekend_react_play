@@ -3,13 +3,18 @@ import React, { Component } from 'react';
 class ToDoListItem extends Component {
 
   render() {
+    const done = this.props.completed;
+    let completedText = done ? "Done!" : "To Do";
     return (
-      <div class="todolist-item">
-        <div class="todolist-item-id">
+      <div className="todolist-item">
+        <div className="todolist-item-id">
           {this.props.id}
         </div>
-        <div class="todolist-item-text">
+        <div className="todolist-item-text">
           {this.props.text}
+        </div>
+        <div className="todolist-item-status">
+          {done}
         </div>
       </div>
     );

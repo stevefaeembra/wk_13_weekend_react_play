@@ -13,11 +13,11 @@ class ToDoList extends Component {
     // and inject the array
     let items = [];
     this.props.toDoItems.forEach((item) => {
-      items.push(<ToDoListItem id={item.id} text={item.text} />)
+      items.push(<ToDoListItem id={item.id} text={item.text} completed={item.completed}/>)
     })
     return (
 
-      <div class="todolist">
+      <div className="todolist">
         <h2>To-Do List</h2>
         {items}
       </div>

@@ -6,8 +6,8 @@ const initialState = {
   },
   {
     id: 2,
-    text: "???",
-    completed: false
+    text: "????",
+    completed: true
   },
   {
     id: 3,
