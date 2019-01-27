@@ -9,15 +9,18 @@ class ToDoList extends Component {
     {
       toDoItems: [{
         id: 1,
-        text: "Learn react.js"
+        text: "Learn react.js",
+        completed: false
       },
       {
         id: 2,
-        text: "???"
+        text: "???",
+        completed: false
       },
       {
         id: 3,
-        text: "Profit!!"
+        text: "Profit!!",
+        completed: false
       }
       ]
     }

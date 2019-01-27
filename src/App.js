@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Greeting from './components/greeting';
 import ToDoList from './components/todolist';
 
+// main
 class App extends Component {
   render() {
     return (
