@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greeting salve="Hola" name="Stevie Boy!"/>
+        <Greeting salve="Hello" name="World!"/>
         <ToDoList />
       </div>
     );

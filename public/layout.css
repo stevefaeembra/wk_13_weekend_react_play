@@ -9,6 +9,11 @@ html {
   background-color: wheat;
 }
 
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .todolist {
   display: flex;
   flex-direction: column;

@@ -19,6 +19,7 @@ const initialState = {
 
 const todos = (state =  initialState, action) => {
   // currently just returns original state
+  // not currently implemented any actions
   return state;
 }
 
