@@ -13,8 +13,13 @@ class ToDoList extends Component {
       },
       {
         id: 2,
-        text: "Buttscratcher! Buttscratcher!"
-      }]
+        text: "???"
+      },
+      {
+        id: 3,
+        text: "Profit!!"
+      }
+      ]
     }
   }
 
@@ -26,7 +31,9 @@ class ToDoList extends Component {
       items.push(<ToDoListItem id={item.id} text={item.text} />)
     })
     return (
-      <div class="todoitem">
+
+      <div class="todolist">
+        <h2>To-Do List</h2>
         {items}
       </div>
     );

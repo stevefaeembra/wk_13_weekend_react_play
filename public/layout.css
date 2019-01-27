@@ -1,0 +1,30 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background-color: wheat;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+}
+
+.todolist-item {
+  margin: 0.5rem 0rem;
+  border:2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.todolist-item-id {
+  width: 20%;
+}
+
+.todolist-item-text {
+  width: 80%;
+}
