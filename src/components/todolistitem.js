@@ -14,7 +14,7 @@ class ToDoListItem extends Component {
           {this.props.text}
         </div>
         <div className="todolist-item-status">
-          {done}
+          {completedText}
         </div>
       </div>
     );
