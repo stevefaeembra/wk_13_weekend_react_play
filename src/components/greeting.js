@@ -4,7 +4,7 @@ class Greeting extends Component {
   render() {
     return (
       <div className="greeting">
-        <h1>Hello {this.props.name}</h1>
+        <h1>{this.props.salve}, {this.props.name}</h1>
       </div>
     );
   }

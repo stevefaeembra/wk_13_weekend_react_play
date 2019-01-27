@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/greeting';
+import ToDoList from './components/todolist';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greeting name="Stevie Boy!"/>
+        <Greeting salve="Hola" name="Stevie Boy!"/>
+        <ToDoList />
       </div>
     );
   }
