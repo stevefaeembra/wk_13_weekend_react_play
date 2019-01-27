@@ -1,36 +1,18 @@
 import React, { Component } from 'react';
-import ToDoListItem from './todolistitem';
+import ToDoListItem from '../components/todolistitem';
+import {connect} from 'react-redux';
 
 class ToDoList extends Component {
 
   constructor(props) {
     super(props);
-    this.state =
-    {
-      toDoItems: [{
-        id: 1,
-        text: "Learn react.js",
-        completed: false
-      },
-      {
-        id: 2,
-        text: "???",
-        completed: false
-      },
-      {
-        id: 3,
-        text: "Profit!!",
-        completed: false
-      }
-      ]
-    }
   }
 
   render() {
     // can't do for loop inside JSX, need to build array outside
     // and inject the array
     let items = [];
-    this.state.toDoItems.forEach((item) => {
+    this.props.toDoItems.forEach((item) => {
       items.push(<ToDoListItem id={item.id} text={item.text} />)
     })
     return (
@@ -43,4 +25,9 @@ class ToDoList extends Component {
   }
 }
 
-export default ToDoList;
+function mapStateToProps(state, ownProps) {
+  //maps state onto props...
+  return {toDoItems: state.toDoItems}
+}
+
+export default connect(mapStateToProps)(ToDoList);

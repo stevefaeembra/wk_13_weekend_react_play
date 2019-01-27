@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-// import './App.css';
 import Greeting from './components/greeting';
-import ToDoList from './components/todolist';
+import ToDoList from './containers/todolist';
 
 // main
 class App extends Component {

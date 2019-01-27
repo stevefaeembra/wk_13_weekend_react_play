@@ -1,23 +1,25 @@
-const todos = (state = [], action) => {
-  switch (action.type) {
-    case 'ADD_TODO':
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ]
-    case 'TOGGLE_TODO':
-      return state.map(todo =>
-        (todo.id === action.id)
-          ? {...todo, completed: !todo.completed}
-          : todo
-      )
-    default:
-      return state
+const initialState = {
+  toDoItems: [{
+    id: 1,
+    text: "Learn react.js and Redux",
+    completed: false
+  },
+  {
+    id: 2,
+    text: "???",
+    completed: false
+  },
+  {
+    id: 3,
+    text: "Profit!!",
+    completed: false
   }
+  ]
+};
+
+const todos = (state =  initialState, action) => {
+  // currently just returns original state
+  return state;
 }
 
 export default todos;
